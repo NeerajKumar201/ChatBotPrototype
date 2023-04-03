@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Details</title>
+
+    <style>
+        input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+        body {
+          align-items: center;
+          background-color: #afd275;
+          display: flex;
+          height: 100vh;
+          justify-content: center;
+        }
+        
+        .element {
+          align-items: center;
+          background-color: #afd275;
+          box-shadow: 
+            12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+          border-radius: 50px;
+          display: flex;
+          height: 200px;
+          justify-content: center;
+          margin-right: 4rem;
+          width: 500px;
+        }
+            </style>
+</head>
+<body>
+    <div class="element">
+        <form method="post" action="http://localhost:8080/api/putcabdata" >
+       
+            <label>Cab Number</label>
+            <input type="number" name="cabid" /><br>
+            <label>Start</label>
+            <input type="text" name="start" /><br>
+            <label>via</label>
+            <input type="text" name="via" /><br>
+            <label>End</label>
+            <input type="text" name="end" /><br>
+            <input type="submit"/>
+        </form>
+    </div>
+    
+</body>
+</html>

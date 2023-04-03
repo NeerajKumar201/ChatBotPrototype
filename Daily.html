@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Update</title>
+    <style>
+        input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+body {
+  align-items: center;
+  background-color: #afd275;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.element {
+  align-items: center;
+  background-color: #afd275;
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-right: 4rem;
+  width: 500px;
+}
+    </style>
+</head>
+<body>
+    <div class="element">
+      
+       <!-- <table>
+        <form method="post" action="http://localhost:8080/api/putdailydata" name="myform"></form>
+       
+          <tr>
+            <td>
+              <label>Employee ID</label>
+            </td>
+            <td>
+              <input type="number" name="empid" id="empid"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Cab Number</label>
+            </td>
+            <td>
+              <input type="number" name="cabid" id="cabid"/><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Coming to Office</label>
+            </td>
+            <td>
+            <input type="radio" id="Yes" name="ctoffice" value=1>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="No" name="ctoffice" value=0>
+            <label for="No">No</label><br>
+            </td>
+          </tr>
+         
+          <tr>
+            <td> <button type="submit" form="myform" value="Submit">Submit</button>
+              </td>
+          </tr>
+          
+        
+      </form>
+      </table>  -->
+      
+        <form method="post" action="http://localhost:8080/api/putdailydata" >
+            <label>Office ID</label>
+            <input type="number" name="empid" id="empid"/><br>
+            <label>Cab Number</label>
+            <input type="number" name="cabid" id="cabid"/><br>
+            <label>Coming to Office</label>
+            <input type="radio" id="Yes" name="ctoffice" value=1>
+            <label for="Yes">Yes</label>
+            <input type="radio" id="No" name="ctoffice" value=0>
+            <label for="No">No</label><br> 
+            <input type="submit"/>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
